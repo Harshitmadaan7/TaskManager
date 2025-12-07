@@ -20,7 +20,7 @@ export const createTask = async (req, res) => {
   }
 };
 
-// GET ALL TASKS (only user’s tasks)
+// GET ALL TASKS 
 export const getMyTasks = async (req, res) => {
   try {
     const tasks = await Task.find({ createdBy: req.user._id }).sort({
