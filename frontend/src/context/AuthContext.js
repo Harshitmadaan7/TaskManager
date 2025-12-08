@@ -6,7 +6,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
 
   useEffect(() => {
-    // Listen for storage changes (useful for multiple tabs)
+    
     const handleStorageChange = () => {
       setToken(localStorage.getItem("token"));
     };
