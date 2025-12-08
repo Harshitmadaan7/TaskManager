@@ -19,7 +19,7 @@ export default function AddTask() {
     e.preventDefault();
     try {
       await api.post("/api/tasks", formData);
-      navigate("/tasks"); // go back to dashboard
+      navigate("/tasks"); 
     } catch (err) {
       setMsg("Failed to create task");
     }
